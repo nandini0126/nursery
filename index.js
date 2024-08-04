@@ -199,7 +199,8 @@ app.delete("/plant/:id",(req,res)=>{
 
 app.use("*",(req,res)=>{
     res.send(`<div>
-        <h1 style="text-align: center; color: grey;">404 Not Found</h1>
+        <img src="https://www.digitalmesh.com/blog/wp-content/uploads/2020/05/404-error.jpg" style="display: block; margin: 20px auto; height: 100px">
+        <h1 style="text-align: center;">404 Not Found</h1>
         </div>`)
 })
 
