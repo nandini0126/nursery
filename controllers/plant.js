@@ -27,13 +27,10 @@ const postPlant = async (req,res)=>{
         data: savedPlant,
         message: "New plant added successfully"
     })
-
-
 }
 
 const getPlant= async (req,res)=>{
 
-    for(let i=0; i<999999999; i++){}
     const allPlants= await Plant.find()
     res.json({
         success:true,
